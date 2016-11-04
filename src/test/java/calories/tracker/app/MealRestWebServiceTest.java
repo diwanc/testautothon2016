@@ -54,7 +54,7 @@ public class MealRestWebServiceTest {
                 .andDo(print())
                 .andExpect(status().isOk())
                 .andExpect(content().contentType("application/json;charset=UTF-8"))
-                .andExpect(jsonPath("$.['meals'].[0].['description']").value("2 -  Chickpea with roasted cauliflower"));
+                .andExpect(jsonPath("$.['meals'].[0].['description']").value("2 -  Chickpea with roasted caulifail"));
     }
 
     @Test
